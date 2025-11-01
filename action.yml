@@ -84,18 +84,10 @@ runs:
         cd flaresolverr
         python build_package.py
 
-  - name: Upload release artifacts
-    uses: softprops/action-gh-release@v2
-    with:
-      files: ./dist/flaresolverr_*
-    env:
-      GITHUB_TOKEN: ${{ secrets.GH_PAT }}
 
-
-
+  
   - uses: actions/upload-artifact@main
     with:
       name: program_${{ inputs.arch }}
       path: |
-        ${{ github.workspace }}/**.dll
-        ${{ github.workspace }}/**.so
+        ${{ github.workspace }}/dist/flaresolverr_*
