@@ -57,6 +57,13 @@ runs:
 
 
 
+  - name: Setup Python
+    uses: actions/setup-python@v6
+    with:
+      python-version: "3.13"
+
+  
+  
   - if: inputs.arch == 'x86' || inputs.arch == 'x64'
     working-directory: ${{ github.workspace }}
     env:
@@ -70,12 +77,19 @@ runs:
 
   - if: inputs.arch == 'so64'
     working-directory: ${{ github.workspace }}
-    env:
-      CC: ccache gcc
-      CXX: ccache g++
     shell: bash
     run: |
-      make platform="unix"
+        python -m pip install -r requirements.txt
+        python -m pip install pyinstaller==6.16.0
+        cd flaresolverr
+        python build_package.py
+
+  - name: Upload release artifacts
+    uses: softprops/action-gh-release@v2
+    with:
+      files: ./dist/flaresolverr_*
+    env:
+      GITHUB_TOKEN: ${{ secrets.GH_PAT }}
 
 
 
