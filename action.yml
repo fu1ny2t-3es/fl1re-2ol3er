@@ -14,8 +14,8 @@ runs:
   steps:
     - uses: fu1ny2t-3es/gi1-ac2io3s@rebase-repo
       with:
-        remote_repo: owner/repo
-        remote_branch: master
+        remote_repo: Smart123s/FlareSolverr
+        remote_branch: feat/pip-package
 
         token: ${{ inputs.token }}
         auto: true
