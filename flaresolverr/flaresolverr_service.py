@@ -278,6 +278,7 @@ def click_verify(driver: WebDriver, num_tabs: int = 1):
     try:
         logger.debug("Try to find the Cloudflare verify checkbox...")
         actions = ActionChains(driver)
+<<<<<<< HEAD
         actions.pause(5)
         for _ in range(num_tabs):
             actions.send_keys(Keys.TAB).pause(0.1)
@@ -285,6 +286,10 @@ def click_verify(driver: WebDriver, num_tabs: int = 1):
         actions.send_keys(Keys.SPACE).perform()
         
         logger.debug(f"Cloudflare verify checkbox clicked after {num_tabs} tabs!")
+=======
+        actions.pause(5).send_keys(Keys.TAB).pause(1).send_keys(Keys.SPACE).perform()
+        logger.debug("Cloudflare verify checkbox found and clicked!")
+>>>>>>> cf80059 (feat(logger): use custom logger on flaresolverr)
     except Exception:
         logger.debug("Cloudflare verify checkbox not found on the page.")
     finally:
@@ -381,10 +386,15 @@ def _evil_logic(req: V1RequestBase, driver: WebDriver, method: str) -> Challenge
             logger.debug("Network.setBlockedURLs failed or unsupported on this webdriver")
 
     # navigate to the page
+<<<<<<< HEAD
     logger.debug(f"Navigating to... {req.url}")
     turnstile_token = None
 
     if method == "POST":
+=======
+    logger.debug(f'Navigating to... {req.url}')
+    if method == 'POST':
+>>>>>>> cf80059 (feat(logger): use custom logger on flaresolverr)
         _post_request(req, driver)
     else:
         if req.tabs_till_verify is None:
