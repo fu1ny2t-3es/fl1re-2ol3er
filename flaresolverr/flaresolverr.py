@@ -9,6 +9,7 @@ from bottle import run, response, Bottle, request, ServerAdapter
 from .bottle_plugins.error_plugin import error_plugin
 from .bottle_plugins.logger_plugin import logger_plugin
 from .bottle_plugins import prometheus_plugin
+<<<<<<< HEAD
 from .exceptions import FlaresolverrException
 from .dtos import V1RequestBase
 from . import flaresolverr_service 
@@ -16,6 +17,11 @@ from . import utils
 
 logger = logging.getLogger('flaresolverr')
 logger.addHandler(logging.NullHandler())
+=======
+from .dtos import V1RequestBase
+from . import flaresolverr_service 
+from . import utils
+>>>>>>> 75c7dc1 (Proper python packaging with Hatch)
 
 env_proxy_url = os.environ.get('PROXY_URL', None)
 env_proxy_username = os.environ.get('PROXY_USERNAME', None)
@@ -72,11 +78,15 @@ def controller_v1():
     return utils.object_to_dict(res)
 
 
+<<<<<<< HEAD
 def init():
     """
     Initialize FlareSolverr, configure logger and validate environment.
     This should be run before calling any other FlareSolverr functions.
     """
+=======
+def main():
+>>>>>>> 75c7dc1 (Proper python packaging with Hatch)
     # check python version
     if sys.version_info < (3, 9):
         raise FlaresolverrException("The Python version is less than 3.9, a version equal to or higher is required.")
