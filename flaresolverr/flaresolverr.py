@@ -26,6 +26,7 @@ logger = logging.getLogger('flaresolverr')
 logger.addHandler(logging.NullHandler())
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 from .dtos import V1RequestBase
 from . import flaresolverr_service 
 from . import utils
@@ -39,7 +40,16 @@ from . import utils
 =======
 >>>>>>> 4738da8 (Proper python packaging with Hatch)
 >>>>>>> 11e979d (feat(logger): use custom logger on flaresolverr)
+<<<<<<< HEAD
 >>>>>>> 330290d (feat(logger): use custom logger on flaresolverr)
+=======
+=======
+>>>>>>> 4738da8 (Proper python packaging with Hatch)
+=======
+>>>>>>> 633f8aa (Proper python packaging with Hatch)
+>>>>>>> 5557d20 (feat(logger): use custom logger on flaresolverr)
+>>>>>>> 5f4d7e8 (feat(logger): use custom logger on flaresolverr)
+>>>>>>> 1a4d7a4 (feat(logger): use custom logger on flaresolverr)
 
 env_proxy_url = os.environ.get('PROXY_URL', None)
 env_proxy_username = os.environ.get('PROXY_USERNAME', None)
@@ -106,16 +116,28 @@ def init():
 def main():
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 75c7dc1 (Proper python packaging with Hatch)
 =======
 >>>>>>> f848326 (Proper python packaging with Hatch)
 >>>>>>> 2a9e5c0 (feat(logger): use custom logger on flaresolverr)
 =======
+=======
+>>>>>>> 1a4d7a4 (feat(logger): use custom logger on flaresolverr)
 >>>>>>> f848326 (Proper python packaging with Hatch)
 =======
 >>>>>>> 4738da8 (Proper python packaging with Hatch)
 >>>>>>> 11e979d (feat(logger): use custom logger on flaresolverr)
+<<<<<<< HEAD
 >>>>>>> 330290d (feat(logger): use custom logger on flaresolverr)
+=======
+=======
+>>>>>>> 4738da8 (Proper python packaging with Hatch)
+=======
+>>>>>>> 633f8aa (Proper python packaging with Hatch)
+>>>>>>> 5557d20 (feat(logger): use custom logger on flaresolverr)
+>>>>>>> 5f4d7e8 (feat(logger): use custom logger on flaresolverr)
+>>>>>>> 1a4d7a4 (feat(logger): use custom logger on flaresolverr)
     # check python version
     if sys.version_info < (3, 9):
         raise FlaresolverrException("The Python version is less than 3.9, a version equal to or higher is required.")

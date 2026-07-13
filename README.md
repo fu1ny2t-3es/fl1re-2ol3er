@@ -98,7 +98,12 @@ pip install flaresolverr
 > **Warning**
 > Installing from source code only works for x64 architecture. For other architectures see Docker images.
 
+<<<<<<< HEAD
 - Install [Python 3.11](https://www.python.org/downloads/).
+=======
+<<<<<<< HEAD
+- Install [Python 3.13](https://www.python.org/downloads/).
+>>>>>>> 1a4d7a4 (feat(logger): use custom logger on flaresolverr)
 - Install [Chrome](https://www.google.com/intl/en_us/chrome/) (all OS) or [Chromium](https://www.chromium.org/getting-involved/download-chromium/) (just Linux, it doesn't work in Windows) web browser.
 - (Only in Linux) Install [Xvfb](https://en.wikipedia.org/wiki/Xvfb) package.
 - (Only in macOS) Install [XQuartz](https://www.xquartz.org/) package.
@@ -116,7 +121,26 @@ pip install flaresolverr
 =======
 - Run `python3.13 -m pip install -r requirements.txt` command to install FlareSolverr dependencies.
 - Run `python3.13 flaresolverr.py` command to start FlareSolverr.
+<<<<<<< HEAD
 >>>>>>> 75c7dc1 (Proper python packaging with Hatch)
+=======
+=======
+* Install [Python 3.14](https://www.python.org/downloads/).
+* Install [Chrome](https://www.google.com/intl/en_us/chrome/) (all OS) or [Chromium](https://www.chromium.org/getting-involved/download-chromium/) (just Linux, it doesn't work in Windows) web browser.
+* (Only in Linux) Install [Xvfb](https://en.wikipedia.org/wiki/Xvfb) package.
+* (Only in macOS) Install [XQuartz](https://www.xquartz.org/) package.
+* Clone this repository and open a shell in that path.
+* Run `pip install -r requirements.txt` command to install FlareSolverr dependencies.
+* Run `python flaresolverr.py` command to start FlareSolverr.
+
+### From source code (FreeBSD/TrueNAS CORE)
+
+* Run `pkg install chromium python313 py313-pip xorg-vfbserver` command to install the required dependencies.
+* Clone this repository and open a shell in that path.
+* Run `python3.14 -m pip install -r requirements.txt` command to install FlareSolverr dependencies.
+* Run `python3.14 flaresolverr.py` command to start FlareSolverr.
+>>>>>>> 633f8aa (Proper python packaging with Hatch)
+>>>>>>> 1a4d7a4 (feat(logger): use custom logger on flaresolverr)
 
 ### Systemd service
 
