@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3cd5906 (Expose resolver functions to python package)
 """FlareSolverr is a proxy server to bypass Cloudflare and DDoS-GUARD protection."""
 
 from .flaresolverr import init, start_webserver
@@ -18,6 +21,7 @@ __all__ = [
     "resolve_challenge",
     "FlaresolverrException",
 ]
+<<<<<<< HEAD
 =======
 __version__ = "3.4.3"
 <<<<<<< HEAD
@@ -41,6 +45,17 @@ __version__ = "3.4.3"
 >>>>>>> 4738da8 (Proper python packaging with Hatch)
 =======
 >>>>>>> 633f8aa (Proper python packaging with Hatch)
+<<<<<<< HEAD
 >>>>>>> 5557d20 (feat(logger): use custom logger on flaresolverr)
+<<<<<<< HEAD
 >>>>>>> 5f4d7e8 (feat(logger): use custom logger on flaresolverr)
+<<<<<<< HEAD
 >>>>>>> 1a4d7a4 (feat(logger): use custom logger on flaresolverr)
+=======
+=======
+=======
+=======
+>>>>>>> 3cd5906 (Expose resolver functions to python package)
+>>>>>>> 4e6928f (feat(logger): use custom logger on flaresolverr)
+>>>>>>> ed5fe10 (feat(logger): use custom logger on flaresolverr)
+>>>>>>> aee724b (feat(logger): use custom logger on flaresolverr)

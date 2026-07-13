@@ -107,11 +107,15 @@ def controller_v1():
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3cd5906 (Expose resolver functions to python package)
 def init():
     """
     Initialize FlareSolverr, configure logger and validate environment.
     This should be run before calling any other FlareSolverr functions.
     """
+<<<<<<< HEAD
 =======
 def main():
 <<<<<<< HEAD
@@ -135,9 +139,20 @@ def main():
 >>>>>>> 4738da8 (Proper python packaging with Hatch)
 =======
 >>>>>>> 633f8aa (Proper python packaging with Hatch)
+<<<<<<< HEAD
 >>>>>>> 5557d20 (feat(logger): use custom logger on flaresolverr)
+<<<<<<< HEAD
 >>>>>>> 5f4d7e8 (feat(logger): use custom logger on flaresolverr)
+<<<<<<< HEAD
 >>>>>>> 1a4d7a4 (feat(logger): use custom logger on flaresolverr)
+=======
+=======
+=======
+=======
+>>>>>>> 3cd5906 (Expose resolver functions to python package)
+>>>>>>> 4e6928f (feat(logger): use custom logger on flaresolverr)
+>>>>>>> ed5fe10 (feat(logger): use custom logger on flaresolverr)
+>>>>>>> aee724b (feat(logger): use custom logger on flaresolverr)
     # check python version
     if sys.version_info < (3, 9):
         raise FlaresolverrException("The Python version is less than 3.9, a version equal to or higher is required.")
@@ -154,6 +169,42 @@ def main():
     os.environ["REQUESTS_CA_BUNDLE"] = certifi.where()
     os.environ["SSL_CERT_FILE"] = certifi.where()
 
+<<<<<<< HEAD
+=======
+    # validate configuration
+    log_level = os.environ.get('LOG_LEVEL', 'info').upper()
+    log_file = os.environ.get('LOG_FILE', None)
+    log_html = utils.get_config_log_html()
+    headless = utils.get_config_headless()
+
+    # configure logger
+    logger_format = '%(asctime)s %(levelname)-8s %(message)s'
+    if log_level == 'DEBUG':
+        logger_format = '%(asctime)s %(levelname)-8s ReqId %(thread)s %(message)s'
+    logging.basicConfig(
+        format=logger_format,
+        level=log_level,
+        datefmt='%Y-%m-%d %H:%M:%S',
+        handlers=[
+            logging.StreamHandler(sys.stdout)
+        ]
+    )
+    if log_file:
+        log_file = os.path.realpath(log_file)
+        log_path = os.path.dirname(log_file)
+        os.makedirs(log_path, exist_ok=True)
+
+        logging.getLogger().addHandler(logging.FileHandler(log_file))
+
+    # disable warning traces from urllib3
+    logging.getLogger('urllib3').setLevel(logging.ERROR)
+    logging.getLogger('selenium.webdriver.remote.remote_connection').setLevel(logging.WARNING)
+    logging.getLogger('undetected_chromedriver').setLevel(logging.WARNING)
+
+    logging.info(f'FlareSolverr {utils.get_flaresolverr_version()}')
+    logging.debug('Debug log enabled')
+
+>>>>>>> 3cd5906 (Expose resolver functions to python package)
     # Get current OS for global variable
     utils.get_current_platform()
 
@@ -189,6 +240,7 @@ def main():
     """
     Main function called when running flaresolverr as script from cli
     """
+<<<<<<< HEAD
     # validate configuration
     log_level = os.environ.get('LOG_LEVEL', 'info').upper()
     log_file = os.environ.get('LOG_FILE', None)
@@ -242,6 +294,8 @@ def main():
     logger.info(f'FlareSolverr {utils.get_flaresolverr_version()}')
     logger.debug('Debug log enabled')
 
+=======
+>>>>>>> 3cd5906 (Expose resolver functions to python package)
     # Initialize the environment
     init()
 

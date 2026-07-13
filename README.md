@@ -93,6 +93,15 @@ This is the recommended way for Windows users.
 pip install flaresolverr
 ```
 
+### As python package
+
+> **Warning**
+> Chrome or Chromium must be installed on the host system for the Python package to work.
+
+```bash
+pip install flaresolverr
+```
+
 ### From source code
 
 > **Warning**
