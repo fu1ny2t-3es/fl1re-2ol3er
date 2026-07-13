@@ -6,7 +6,11 @@ from uuid import uuid1
 
 from selenium.webdriver.chrome.webdriver import WebDriver
 
+<<<<<<< HEAD
 from . import utils
+=======
+import flaresolverr.utils as utils
+>>>>>>> 633f8aa (Proper python packaging with Hatch)
 
 
 @dataclass

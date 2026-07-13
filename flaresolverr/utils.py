@@ -9,7 +9,9 @@ import tempfile
 import urllib.parse
 
 from selenium.webdriver.chrome.webdriver import WebDriver
+<<<<<<< HEAD
 from . import undetected_chromedriver as uc
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -24,6 +26,16 @@ from .exceptions import FlaresolverrException
 =======
 >>>>>>> f848326 (Proper python packaging with Hatch)
 >>>>>>> ad32d26 (feat(logger): use custom logger on flaresolverr)
+=======
+from .exceptions import FlaresolverrException
+=======
+>>>>>>> f848326 (Proper python packaging with Hatch)
+=======
+=======
+import flaresolverr.undetected_chromedriver as uc
+>>>>>>> 633f8aa (Proper python packaging with Hatch)
+>>>>>>> bbad2ee (feat(logger): use custom logger on flaresolverr)
+>>>>>>> 8ad60c3 (feat(logger): use custom logger on flaresolverr)
 
 FLARESOLVERR_VERSION = None
 PLATFORM_VERSION = None
