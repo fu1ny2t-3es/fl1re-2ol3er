@@ -10,7 +10,10 @@ import urllib.parse
 
 from selenium.webdriver.chrome.webdriver import WebDriver
 from . import undetected_chromedriver as uc
+<<<<<<< HEAD
 from .exceptions import FlaresolverrException
+=======
+>>>>>>> 75c7dc1 (Proper python packaging with Hatch)
 
 FLARESOLVERR_VERSION = None
 PLATFORM_VERSION = None

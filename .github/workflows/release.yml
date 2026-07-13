@@ -51,7 +51,11 @@ jobs:
       - name: Build artifacts
         run: |
           python -m pip install -r requirements.txt
+<<<<<<< HEAD
           python -m pip install pyinstaller==6.20.0
+=======
+          python -m pip install pyinstaller==6.17.0
+>>>>>>> 75c7dc1 (Proper python packaging with Hatch)
           cd flaresolverr
           python build_package.py
 

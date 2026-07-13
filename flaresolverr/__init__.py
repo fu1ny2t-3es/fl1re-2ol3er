@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """FlareSolverr is a proxy server to bypass Cloudflare and DDoS-GUARD protection."""
 
 from .flaresolverr import init, start_webserver
@@ -17,3 +18,6 @@ __all__ = [
     "resolve_challenge",
     "FlaresolverrException",
 ]
+=======
+__version__ = "3.4.3"
+>>>>>>> 75c7dc1 (Proper python packaging with Hatch)
