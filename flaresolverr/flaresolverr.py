@@ -20,10 +20,12 @@ from .exceptions import FlaresolverrException
 from .dtos import V1RequestBase
 from . import flaresolverr_service 
 from . import utils
+<<<<<<< HEAD
 
 logger = logging.getLogger('flaresolverr')
 logger.addHandler(logging.NullHandler())
 =======
+<<<<<<< HEAD
 from .dtos import V1RequestBase
 from . import flaresolverr_service 
 from . import utils
@@ -31,7 +33,13 @@ from . import utils
 >>>>>>> 75c7dc1 (Proper python packaging with Hatch)
 =======
 >>>>>>> f848326 (Proper python packaging with Hatch)
+<<<<<<< HEAD
 >>>>>>> ad32d26 (feat(logger): use custom logger on flaresolverr)
+=======
+=======
+>>>>>>> 4738da8 (Proper python packaging with Hatch)
+>>>>>>> fd898f7 (feat(logger): use custom logger on flaresolverr)
+>>>>>>> d32dff0 (feat(logger): use custom logger on flaresolverr)
 
 env_proxy_url = os.environ.get('PROXY_URL', None)
 env_proxy_username = os.environ.get('PROXY_USERNAME', None)
@@ -97,10 +105,17 @@ def init():
 =======
 def main():
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 75c7dc1 (Proper python packaging with Hatch)
 =======
 >>>>>>> f848326 (Proper python packaging with Hatch)
 >>>>>>> ad32d26 (feat(logger): use custom logger on flaresolverr)
+=======
+>>>>>>> f848326 (Proper python packaging with Hatch)
+=======
+>>>>>>> 4738da8 (Proper python packaging with Hatch)
+>>>>>>> fd898f7 (feat(logger): use custom logger on flaresolverr)
+>>>>>>> d32dff0 (feat(logger): use custom logger on flaresolverr)
     # check python version
     if sys.version_info < (3, 9):
         raise FlaresolverrException("The Python version is less than 3.9, a version equal to or higher is required.")
