@@ -11,8 +11,11 @@ from .bottle_plugins.logger_plugin import logger_plugin
 from .bottle_plugins import prometheus_plugin
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> df4f4c1 (refactor: replace generic exceptions with FlaresolverrException for better error handling)
+=======
+>>>>>>> ad32d26 (feat(logger): use custom logger on flaresolverr)
 from .exceptions import FlaresolverrException
 from .dtos import V1RequestBase
 from . import flaresolverr_service 
@@ -24,7 +27,11 @@ logger.addHandler(logging.NullHandler())
 from .dtos import V1RequestBase
 from . import flaresolverr_service 
 from . import utils
+<<<<<<< HEAD
 >>>>>>> 75c7dc1 (Proper python packaging with Hatch)
+=======
+>>>>>>> f848326 (Proper python packaging with Hatch)
+>>>>>>> ad32d26 (feat(logger): use custom logger on flaresolverr)
 
 env_proxy_url = os.environ.get('PROXY_URL', None)
 env_proxy_username = os.environ.get('PROXY_USERNAME', None)
@@ -89,7 +96,11 @@ def init():
     """
 =======
 def main():
+<<<<<<< HEAD
 >>>>>>> 75c7dc1 (Proper python packaging with Hatch)
+=======
+>>>>>>> f848326 (Proper python packaging with Hatch)
+>>>>>>> ad32d26 (feat(logger): use custom logger on flaresolverr)
     # check python version
     if sys.version_info < (3, 9):
         raise FlaresolverrException("The Python version is less than 3.9, a version equal to or higher is required.")
