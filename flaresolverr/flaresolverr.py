@@ -82,6 +82,9 @@ from . import utils
 >>>>>>> 8ad60c3 (feat(logger): use custom logger on flaresolverr)
 >>>>>>> 9c035e0 (feat(logger): use custom logger on flaresolverr)
 
+logger = logging.getLogger('flaresolverr')
+logger.addHandler(logging.NullHandler())
+
 env_proxy_url = os.environ.get('PROXY_URL', None)
 env_proxy_username = os.environ.get('PROXY_USERNAME', None)
 env_proxy_password = os.environ.get('PROXY_PASSWORD', None)
@@ -232,6 +235,7 @@ def main():
     os.environ["SSL_CERT_FILE"] = certifi.where()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     # validate configuration
     log_level = os.environ.get('LOG_LEVEL', 'info').upper()
@@ -267,6 +271,8 @@ def main():
     logging.debug('Debug log enabled')
 
 >>>>>>> 3cd5906 (Expose resolver functions to python package)
+=======
+>>>>>>> cf80059 (feat(logger): use custom logger on flaresolverr)
     # Get current OS for global variable
     utils.get_current_platform()
 
@@ -303,16 +309,23 @@ def main():
     Main function called when running flaresolverr as script from cli
     """
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> cf80059 (feat(logger): use custom logger on flaresolverr)
     # validate configuration
     log_level = os.environ.get('LOG_LEVEL', 'info').upper()
     log_file = os.environ.get('LOG_FILE', None)
     log_html = utils.get_config_log_html()
+<<<<<<< HEAD
     headless = utils.get_config_headless()
+=======
+>>>>>>> cf80059 (feat(logger): use custom logger on flaresolverr)
 
     # configure logger
     logger_format = '%(asctime)s %(levelname)-8s %(message)s'
     if log_level == 'DEBUG':
         logger_format = '%(asctime)s %(levelname)-8s ReqId %(thread)s %(message)s'
+<<<<<<< HEAD
     if log_file:
         log_file = os.path.realpath(log_file)
         log_path = os.path.dirname(log_file)
@@ -343,6 +356,8 @@ def main():
 
     logging.info(f'FlareSolverr {utils.get_flaresolverr_version()}')
     logging.debug('Debug log enabled')
+=======
+>>>>>>> cf80059 (feat(logger): use custom logger on flaresolverr)
 
     # set cli logger level
     logger.setLevel(log_level)
@@ -358,6 +373,7 @@ def main():
     logger.info(f'FlareSolverr {utils.get_flaresolverr_version()}')
     logger.debug('Debug log enabled')
 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 def start_webserver():
@@ -397,7 +413,12 @@ def main():
 >>>>>>> 2b46762 (feat(logger): use custom logger on flaresolverr)
 =======
 >>>>>>> 3cd5906 (Expose resolver functions to python package)
+<<<<<<< HEAD
 >>>>>>> 3abfcf9 (feat(logger): use custom logger on flaresolverr)
+=======
+=======
+>>>>>>> cf80059 (feat(logger): use custom logger on flaresolverr)
+>>>>>>> b0e9928 (feat(logger): use custom logger on flaresolverr)
     # Initialize the environment
     init()
 
