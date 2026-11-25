@@ -26,6 +26,7 @@ from .sessions import SessionsStorage
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 from .exceptions import FlaresolverrException
 =======
 >>>>>>> 8bb5e29 (Proper python packaging with Hatch)
@@ -38,13 +39,23 @@ from .exceptions import FlaresolverrException
 >>>>>>> 75c7dc1 (Proper python packaging with Hatch)
 >>>>>>> 4dcf676 (feat(logger): use custom logger on flaresolverr)
 =======
+=======
+>>>>>>> 8ee9d7f (feat(logger): use custom logger on flaresolverr)
 from .exceptions import FlaresolverrException
 =======
 >>>>>>> 75c7dc1 (Proper python packaging with Hatch)
 =======
 from .exceptions import FlaresolverrException
 >>>>>>> df4f4c1 (refactor: replace generic exceptions with FlaresolverrException for better error handling)
+<<<<<<< HEAD
 >>>>>>> e23fc30 (feat(logger): use custom logger on flaresolverr)
+=======
+=======
+from .exceptions import FlaresolverrException
+=======
+>>>>>>> f848326 (Proper python packaging with Hatch)
+>>>>>>> ad32d26 (feat(logger): use custom logger on flaresolverr)
+>>>>>>> 8ee9d7f (feat(logger): use custom logger on flaresolverr)
 
 ACCESS_DENIED_TITLES = [
     # Cloudflare
