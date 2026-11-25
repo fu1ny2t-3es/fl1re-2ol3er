@@ -17,11 +17,14 @@ from . import utils
 
 logger = logging.getLogger('flaresolverr')
 logger.addHandler(logging.NullHandler())
+<<<<<<< HEAD
 =======
 from .dtos import V1RequestBase
 from . import flaresolverr_service 
 from . import utils
 >>>>>>> 8bb5e29 (Proper python packaging with Hatch)
+=======
+>>>>>>> 2b46762 (feat(logger): use custom logger on flaresolverr)
 
 env_proxy_url = os.environ.get('PROXY_URL', None)
 env_proxy_username = os.environ.get('PROXY_USERNAME', None)
@@ -195,6 +198,7 @@ def main():
     logger.addHandler(ch)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     logger.info(f'FlareSolverr {utils.get_flaresolverr_version()}')
     logger.debug('Debug log enabled')
 
@@ -229,6 +233,11 @@ def main():
     Main function called when running flaresolverr as script from cli
     """
 >>>>>>> 63edbdf (Expose resolver functions to python package)
+=======
+    logger.info(f'FlareSolverr {utils.get_flaresolverr_version()}')
+    logger.debug('Debug log enabled')
+
+>>>>>>> 2b46762 (feat(logger): use custom logger on flaresolverr)
     # Initialize the environment
     init()
 
