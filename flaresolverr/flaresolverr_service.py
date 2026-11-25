@@ -443,12 +443,20 @@ def _evil_logic(req: V1RequestBase, driver: WebDriver, method: str) -> Challenge
                 # wait until the title changes
                 for title in CHALLENGE_TITLES:
                     logger.debug("Waiting for title (attempt " + str(attempt) + "): " + title)
+<<<<<<< HEAD
                     WebDriverWait(driver, browser_wait_timeout).until_not(title_is(title))
+=======
+                    WebDriverWait(driver, SHORT_TIMEOUT).until_not(title_is(title))
+>>>>>>> 2b46762 (feat(logger): use custom logger on flaresolverr)
 
                 # then wait until all the selectors disappear
                 for selector in CHALLENGE_SELECTORS:
                     logger.debug("Waiting for selector (attempt " + str(attempt) + "): " + selector)
+<<<<<<< HEAD
                     WebDriverWait(driver, browser_wait_timeout).until_not(
+=======
+                    WebDriverWait(driver, SHORT_TIMEOUT).until_not(
+>>>>>>> 2b46762 (feat(logger): use custom logger on flaresolverr)
                         presence_of_element_located((By.CSS_SELECTOR, selector)))
 
                 # all elements not found
