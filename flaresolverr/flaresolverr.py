@@ -79,14 +79,20 @@ def controller_v1():
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 63edbdf (Expose resolver functions to python package)
 def init():
     """
     Initialize FlareSolverr, configure logger and validate environment.
     This should be run before calling any other FlareSolverr functions.
     """
+<<<<<<< HEAD
 =======
 def main():
 >>>>>>> 8bb5e29 (Proper python packaging with Hatch)
+=======
+>>>>>>> 63edbdf (Expose resolver functions to python package)
     # check python version
     if sys.version_info < (3, 9):
         raise FlaresolverrException("The Python version is less than 3.9, a version equal to or higher is required.")
@@ -188,9 +194,41 @@ def main():
     ch.setFormatter(logging.Formatter(fmt=logger_format, datefmt='%Y-%m-%d %H:%M:%S'))
     logger.addHandler(ch)
 
+<<<<<<< HEAD
     logger.info(f'FlareSolverr {utils.get_flaresolverr_version()}')
     logger.debug('Debug log enabled')
 
+=======
+def start_webserver():
+    """
+    Start FlareSolverr webserver
+    """
+
+    server_host = os.environ.get('HOST', '0.0.0.0')
+    server_port = int(os.environ.get('PORT', 8191))
+
+    # start bootle plugins
+    # plugin order is important
+    app.install(logger_plugin)
+    app.install(error_plugin)
+    prometheus_plugin.setup()
+    app.install(prometheus_plugin.prometheus_plugin)
+
+    # start webserver
+    # default server 'wsgiref' does not support concurrent requests
+    # https://github.com/FlareSolverr/FlareSolverr/issues/680
+    # https://github.com/Pylons/waitress/issues/31
+    class WaitressServerPoll(ServerAdapter):
+        def run(self, handler):
+            from waitress import serve
+            serve(handler, host=self.host, port=self.port, asyncore_use_poll=True)
+    run(app, host=server_host, port=server_port, quiet=True, server=WaitressServerPoll)
+
+def main():
+    """
+    Main function called when running flaresolverr as script from cli
+    """
+>>>>>>> 63edbdf (Expose resolver functions to python package)
     # Initialize the environment
     init()
 
