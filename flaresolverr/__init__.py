@@ -29,6 +29,7 @@ __all__ = [
 =======
 __version__ = "3.4.3"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8bb5e29 (Proper python packaging with Hatch)
 =======
 =======
@@ -54,9 +55,20 @@ __version__ = "3.4.3"
 >>>>>>> 75c7dc1 (Proper python packaging with Hatch)
 >>>>>>> 4dcf676 (feat(logger): use custom logger on flaresolverr)
 =======
+=======
+>>>>>>> 1b8924d (feat(logger): use custom logger on flaresolverr)
 <<<<<<< HEAD
 >>>>>>> 75c7dc1 (Proper python packaging with Hatch)
 =======
 >>>>>>> f848326 (Proper python packaging with Hatch)
 >>>>>>> ad32d26 (feat(logger): use custom logger on flaresolverr)
+<<<<<<< HEAD
 >>>>>>> 8ee9d7f (feat(logger): use custom logger on flaresolverr)
+=======
+=======
+>>>>>>> f848326 (Proper python packaging with Hatch)
+=======
+>>>>>>> 4738da8 (Proper python packaging with Hatch)
+>>>>>>> fd898f7 (feat(logger): use custom logger on flaresolverr)
+>>>>>>> d32dff0 (feat(logger): use custom logger on flaresolverr)
+>>>>>>> 1b8924d (feat(logger): use custom logger on flaresolverr)
