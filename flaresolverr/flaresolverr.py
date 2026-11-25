@@ -42,6 +42,7 @@ logger.addHandler(logging.NullHandler())
 >>>>>>> 4dcf676 (feat(logger): use custom logger on flaresolverr)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 from .dtos import V1RequestBase
 from . import flaresolverr_service 
 from . import utils
@@ -66,8 +67,20 @@ from . import utils
 =======
 >>>>>>> 4738da8 (Proper python packaging with Hatch)
 >>>>>>> fd898f7 (feat(logger): use custom logger on flaresolverr)
+<<<<<<< HEAD
 >>>>>>> d32dff0 (feat(logger): use custom logger on flaresolverr)
+<<<<<<< HEAD
 >>>>>>> 1b8924d (feat(logger): use custom logger on flaresolverr)
+=======
+=======
+=======
+>>>>>>> 4738da8 (Proper python packaging with Hatch)
+=======
+>>>>>>> 633f8aa (Proper python packaging with Hatch)
+>>>>>>> 1117914 (feat(logger): use custom logger on flaresolverr)
+>>>>>>> bbad2ee (feat(logger): use custom logger on flaresolverr)
+>>>>>>> 8ad60c3 (feat(logger): use custom logger on flaresolverr)
+>>>>>>> 9c035e0 (feat(logger): use custom logger on flaresolverr)
 
 env_proxy_url = os.environ.get('PROXY_URL', None)
 env_proxy_username = os.environ.get('PROXY_USERNAME', None)
@@ -148,6 +161,7 @@ def main():
 def main():
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 75c7dc1 (Proper python packaging with Hatch)
 <<<<<<< HEAD
 >>>>>>> 4dcf676 (feat(logger): use custom logger on flaresolverr)
@@ -159,12 +173,26 @@ def main():
 >>>>>>> 8ee9d7f (feat(logger): use custom logger on flaresolverr)
 =======
 =======
+=======
+>>>>>>> 8ad60c3 (feat(logger): use custom logger on flaresolverr)
 >>>>>>> f848326 (Proper python packaging with Hatch)
 =======
 >>>>>>> 4738da8 (Proper python packaging with Hatch)
 >>>>>>> fd898f7 (feat(logger): use custom logger on flaresolverr)
+<<<<<<< HEAD
 >>>>>>> d32dff0 (feat(logger): use custom logger on flaresolverr)
+<<<<<<< HEAD
 >>>>>>> 1b8924d (feat(logger): use custom logger on flaresolverr)
+=======
+=======
+=======
+>>>>>>> 4738da8 (Proper python packaging with Hatch)
+=======
+>>>>>>> 633f8aa (Proper python packaging with Hatch)
+>>>>>>> 1117914 (feat(logger): use custom logger on flaresolverr)
+>>>>>>> bbad2ee (feat(logger): use custom logger on flaresolverr)
+>>>>>>> 8ad60c3 (feat(logger): use custom logger on flaresolverr)
+>>>>>>> 9c035e0 (feat(logger): use custom logger on flaresolverr)
     # check python version
     if sys.version_info < (3, 9):
         raise FlaresolverrException("The Python version is less than 3.9, a version equal to or higher is required.")
