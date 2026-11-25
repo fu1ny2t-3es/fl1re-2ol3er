@@ -138,12 +138,17 @@ pip install flaresolverr
 - Run `pkg install chromium python313 py311-pip xorg-vfbserver` command to install the required dependencies.
 - Clone this repository and open a shell in that path.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Run `python3.11 -m pip install -r requirements.txt` command to install FlareSolverr dependencies.
 - Run `python3.11 flaresolverr.py` command to start FlareSolverr.
 =======
 - Run `python3.13 -m pip install -r requirements.txt` command to install FlareSolverr dependencies.
 - Run `python3.13 flaresolverr.py` command to start FlareSolverr.
 >>>>>>> 8bb5e29 (Proper python packaging with Hatch)
+=======
+- Run `python3.11 -m pip install -r requirements.txt` command to install FlareSolverr dependencies.
+- Run `python3.11 flaresolverr.py` command to start FlareSolverr.
+>>>>>>> 5d38858 (refactor: replace generic exceptions with FlaresolverrException for better error handling)
 
 ### Systemd service
 
