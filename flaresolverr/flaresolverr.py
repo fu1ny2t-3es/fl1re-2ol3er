@@ -12,10 +12,15 @@ from .bottle_plugins import prometheus_plugin
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5d38858 (refactor: replace generic exceptions with FlaresolverrException for better error handling)
 =======
 >>>>>>> 4dcf676 (feat(logger): use custom logger on flaresolverr)
+=======
+=======
+>>>>>>> df4f4c1 (refactor: replace generic exceptions with FlaresolverrException for better error handling)
+>>>>>>> e23fc30 (feat(logger): use custom logger on flaresolverr)
 from .exceptions import FlaresolverrException
 from .dtos import V1RequestBase
 from . import flaresolverr_service 
