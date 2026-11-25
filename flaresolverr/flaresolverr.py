@@ -10,6 +10,9 @@ from .bottle_plugins.error_plugin import error_plugin
 from .bottle_plugins.logger_plugin import logger_plugin
 from .bottle_plugins import prometheus_plugin
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5d38858 (refactor: replace generic exceptions with FlaresolverrException for better error handling)
 from .exceptions import FlaresolverrException
 from .dtos import V1RequestBase
 from . import flaresolverr_service 
