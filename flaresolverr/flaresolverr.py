@@ -33,6 +33,7 @@ from .dtos import V1RequestBase
 from . import flaresolverr_service 
 from . import utils
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 logger = logging.getLogger('flaresolverr')
 logger.addHandler(logging.NullHandler())
@@ -77,13 +78,29 @@ from . import utils
 >>>>>>> 4738da8 (Proper python packaging with Hatch)
 =======
 >>>>>>> 633f8aa (Proper python packaging with Hatch)
+<<<<<<< HEAD
 >>>>>>> 1117914 (feat(logger): use custom logger on flaresolverr)
+<<<<<<< HEAD
 >>>>>>> bbad2ee (feat(logger): use custom logger on flaresolverr)
+<<<<<<< HEAD
 >>>>>>> 8ad60c3 (feat(logger): use custom logger on flaresolverr)
+<<<<<<< HEAD
 >>>>>>> 9c035e0 (feat(logger): use custom logger on flaresolverr)
+=======
+=======
+=======
+=======
+=======
+>>>>>>> 447c45a (feat(logger): use custom logger on flaresolverr)
+>>>>>>> a5ed274 (feat(logger): use custom logger on flaresolverr)
+>>>>>>> e3f1dac (feat(logger): use custom logger on flaresolverr)
+>>>>>>> b672573 (feat(logger): use custom logger on flaresolverr)
+>>>>>>> d9a56ca (feat(logger): use custom logger on flaresolverr)
 
 logger = logging.getLogger('flaresolverr')
 logger.addHandler(logging.NullHandler())
+=======
+>>>>>>> c56d9e0 (Proper python packaging with Hatch)
 
 env_proxy_url = os.environ.get('PROXY_URL', None)
 env_proxy_username = os.environ.get('PROXY_USERNAME', None)
@@ -144,6 +161,7 @@ def controller_v1():
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 63edbdf (Expose resolver functions to python package)
 =======
@@ -152,11 +170,18 @@ def controller_v1():
 =======
 >>>>>>> 3cd5906 (Expose resolver functions to python package)
 >>>>>>> 3abfcf9 (feat(logger): use custom logger on flaresolverr)
+=======
+=======
+>>>>>>> 3cd5906 (Expose resolver functions to python package)
+=======
+>>>>>>> 447c45a (feat(logger): use custom logger on flaresolverr)
+>>>>>>> d9a56ca (feat(logger): use custom logger on flaresolverr)
 def init():
     """
     Initialize FlareSolverr, configure logger and validate environment.
     This should be run before calling any other FlareSolverr functions.
     """
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -168,6 +193,8 @@ def main():
 =======
 =======
 >>>>>>> 3abfcf9 (feat(logger): use custom logger on flaresolverr)
+=======
+>>>>>>> d9a56ca (feat(logger): use custom logger on flaresolverr)
 =======
 def main():
 <<<<<<< HEAD
@@ -214,10 +241,27 @@ def main():
 =======
 =======
 >>>>>>> 3cd5906 (Expose resolver functions to python package)
+<<<<<<< HEAD
 >>>>>>> 2a92c69 (feat(logger): use custom logger on flaresolverr)
+<<<<<<< HEAD
 >>>>>>> 93ba1ba (feat(logger): use custom logger on flaresolverr)
+<<<<<<< HEAD
 >>>>>>> f1b5a89 (feat(logger): use custom logger on flaresolverr)
+<<<<<<< HEAD
 >>>>>>> 3abfcf9 (feat(logger): use custom logger on flaresolverr)
+=======
+=======
+=======
+=======
+=======
+=======
+def main():
+>>>>>>> c56d9e0 (Proper python packaging with Hatch)
+>>>>>>> 447c45a (feat(logger): use custom logger on flaresolverr)
+>>>>>>> a5ed274 (feat(logger): use custom logger on flaresolverr)
+>>>>>>> e3f1dac (feat(logger): use custom logger on flaresolverr)
+>>>>>>> b672573 (feat(logger): use custom logger on flaresolverr)
+>>>>>>> d9a56ca (feat(logger): use custom logger on flaresolverr)
     # check python version
     if sys.version_info < (3, 9):
         raise FlaresolverrException("The Python version is less than 3.9, a version equal to or higher is required.")
