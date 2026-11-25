@@ -13,6 +13,7 @@ from .bottle_plugins import prometheus_plugin
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5d38858 (refactor: replace generic exceptions with FlaresolverrException for better error handling)
 =======
@@ -21,6 +22,12 @@ from .bottle_plugins import prometheus_plugin
 =======
 >>>>>>> df4f4c1 (refactor: replace generic exceptions with FlaresolverrException for better error handling)
 >>>>>>> 55921bb (feat(logger): use custom logger on flaresolverr)
+=======
+=======
+>>>>>>> df4f4c1 (refactor: replace generic exceptions with FlaresolverrException for better error handling)
+=======
+>>>>>>> 2a9e5c0 (feat(logger): use custom logger on flaresolverr)
+>>>>>>> 211115a (feat(logger): use custom logger on flaresolverr)
 from .exceptions import FlaresolverrException
 from .dtos import V1RequestBase
 from . import flaresolverr_service 
@@ -37,12 +44,19 @@ from .dtos import V1RequestBase
 from . import flaresolverr_service 
 from . import utils
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8bb5e29 (Proper python packaging with Hatch)
 =======
 >>>>>>> 2b46762 (feat(logger): use custom logger on flaresolverr)
 =======
 >>>>>>> 75c7dc1 (Proper python packaging with Hatch)
 >>>>>>> beba0b3 (feat(logger): use custom logger on flaresolverr)
+=======
+>>>>>>> 75c7dc1 (Proper python packaging with Hatch)
+=======
+>>>>>>> f848326 (Proper python packaging with Hatch)
+>>>>>>> 2a9e5c0 (feat(logger): use custom logger on flaresolverr)
+>>>>>>> 211115a (feat(logger): use custom logger on flaresolverr)
 
 env_proxy_url = os.environ.get('PROXY_URL', None)
 env_proxy_username = os.environ.get('PROXY_USERNAME', None)
@@ -121,8 +135,15 @@ def main():
 =======
 =======
 def main():
+<<<<<<< HEAD
 >>>>>>> 75c7dc1 (Proper python packaging with Hatch)
+<<<<<<< HEAD
 >>>>>>> beba0b3 (feat(logger): use custom logger on flaresolverr)
+=======
+=======
+>>>>>>> f848326 (Proper python packaging with Hatch)
+>>>>>>> 2a9e5c0 (feat(logger): use custom logger on flaresolverr)
+>>>>>>> 211115a (feat(logger): use custom logger on flaresolverr)
     # check python version
     if sys.version_info < (3, 9):
         raise FlaresolverrException("The Python version is less than 3.9, a version equal to or higher is required.")
