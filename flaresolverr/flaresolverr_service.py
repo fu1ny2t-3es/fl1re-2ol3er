@@ -22,7 +22,10 @@ from .dtos import (STATUS_ERROR, STATUS_OK, ChallengeResolutionResultT,
                   ChallengeResolutionT, HealthResponse, IndexResponse,
                   V1RequestBase, V1ResponseBase)
 from .sessions import SessionsStorage
+<<<<<<< HEAD
 from .exceptions import FlaresolverrException
+=======
+>>>>>>> 8bb5e29 (Proper python packaging with Hatch)
 
 ACCESS_DENIED_TITLES = [
     # Cloudflare
