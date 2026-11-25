@@ -53,16 +53,28 @@ jobs:
           python -m pip install -r requirements.txt
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           python -m pip install pyinstaller==6.22.2
 =======
           python -m pip install pyinstaller==6.20.0
 >>>>>>> 8bb5e29 (Proper python packaging with Hatch)
 =======
+=======
+>>>>>>> 7e0b04b (feat(logger): use custom logger on flaresolverr)
           python -m pip install pyinstaller==6.20.0
 =======
           python -m pip install pyinstaller==6.17.0
 >>>>>>> 75c7dc1 (Proper python packaging with Hatch)
+<<<<<<< HEAD
 >>>>>>> beba0b3 (feat(logger): use custom logger on flaresolverr)
+=======
+=======
+          python -m pip install pyinstaller==6.17.0
+=======
+          python -m pip install pyinstaller==6.16.0
+>>>>>>> 4738da8 (Proper python packaging with Hatch)
+>>>>>>> 330290d (feat(logger): use custom logger on flaresolverr)
+>>>>>>> 7e0b04b (feat(logger): use custom logger on flaresolverr)
           cd flaresolverr
           python build_package.py
 
