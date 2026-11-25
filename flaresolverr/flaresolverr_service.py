@@ -24,12 +24,18 @@ from .dtos import (STATUS_ERROR, STATUS_OK, ChallengeResolutionResultT,
 from .sessions import SessionsStorage
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 from .exceptions import FlaresolverrException
 =======
 >>>>>>> 8bb5e29 (Proper python packaging with Hatch)
 =======
 from .exceptions import FlaresolverrException
 >>>>>>> 5d38858 (refactor: replace generic exceptions with FlaresolverrException for better error handling)
+=======
+from .exceptions import FlaresolverrException
+=======
+>>>>>>> 75c7dc1 (Proper python packaging with Hatch)
+>>>>>>> 4dcf676 (feat(logger): use custom logger on flaresolverr)
 
 ACCESS_DENIED_TITLES = [
     # Cloudflare
